@@ -1,0 +1,19 @@
+header, section, footer, aside, nav, article, figure, figcaption {
+display: block;
+}
+
+body {
+  color: #EBEBEB;
+  font-family: sans-serif;
+  margin: 0px;
+}
+
+header {
+  color: #3F5271;
+  font-size: 3em;
+
+}
+
+div.logo {
+  font-size: 3em;
+}
