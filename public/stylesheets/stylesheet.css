@@ -1,0 +1,81 @@
+
+article, aside, figure, footer, header, hgroup, nav, section { 
+    display: block; 
+  }
+
+body {
+  max-width: 960px;
+  font-family: Arial, Verdana sans-serif;
+  text-align: center;
+  margin: 10px auto 10px auto;
+  background-color: white;
+}
+
+header {
+  height: 150px;
+  width: 100%;
+  font-size: 2em;
+  color: #727F95;
+  margin-bottom: 30px;
+}
+
+img {
+  max-width: 100%;
+  min-width: 25%;
+  padding-bottom: 20px;
+  border-bottom: 1px solid #727F95;
+}
+
+.datetime {
+  float: right;
+}
+
+.weather {
+  padding: 20px;
+}
+
+/* page core */
+div#core {
+  display: block;
+  clear: both;
+  margin-bottom: 20px;
+}
+section#left {
+  width: 60%;
+  float: left;
+  margin-right: 5px;
+}
+
+section#right {
+  float: right;
+  width: 35%;
+}
+
+ 
+/* clearfix */
+.clearfix:after {
+  content: ".";
+  display: block;
+  clear: both;
+  visibility: hidden;
+  line-height: 0;
+  height: 0;
+}
+.clearfix {
+  display: inline-block;
+}
+ 
+html[xmlns] .clearfix {
+  display: block;
+}
+* html .clearfix {
+  height: 1%;
+}
+
+footer {
+  background-color: #727F95;
+  color: #EBEBEB;
+  height: 75px;
+  font-size: 1.5em;
+}
+
