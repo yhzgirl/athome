@@ -14,24 +14,30 @@ body {
 header {
   height: 150px;
   width: 100%;
-  font-size: 2em;
   color: #727F95;
-  margin-bottom: 30px;
+  margin-bottom: 20px;
+}
+
+h1 {
+  font-size: 3em;
 }
 
 img {
   max-width: 100%;
   min-width: 25%;
   padding-bottom: 20px;
+  padding-top: 10px;
   border-bottom: 1px solid #727F95;
 }
 
 .datetime {
   float: right;
+  color: #1B2644;
 }
 
 .weather {
   padding: 20px;
+  border-bottom: 1px solid #727F95;
 }
 
 /* page core */
