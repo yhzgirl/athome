@@ -14,32 +14,30 @@
 <body>
       <header>
         <h1>@Home Halifax</h1>
-
-        <div class='datetime'>
-          <% Time.zone = "Atlantic Time (Canada)" %>
-          <% @timehalifax = Time.zone.now %>
-          <%= @timehalifax.strftime("%H:%M:%S on %A, %B %d, %Y") %>
-        </div> 
-
-        </header>
+          <div class='datetime'>
+            <% Time.zone = "Atlantic Time (Canada)" %>
+            <% @timehalifax = Time.zone.now %>
+            <h2><%= @timehalifax.strftime("%A, %B %d %Y </br> %H:%M:%S ") %></h2>
+            <h2 class='hidden'>Halifax Time</h3>
+          </div> 
+      </header>
         
         <div id="core" class="clearfix">
-            <section id="left">
-    
-    
-                <iframe class="weather" marginheight="0" marginwidth="0" name="wxButtonFrame" id="wxButtonFrame" height="150" src="http://btn.weather.ca/weatherbuttons/template7.php?placeCode=CANS0057&category0=Cities&containerWidth=180&btnNo=&backgroundColor=blue&multipleCity=0&citySearch=0&celsiusF=C" align="top" frameborder="0" width="180" scrolling="no" allowTransparency="true">
-                </iframe>
+          <section id="left">
+            <iframe class="weather" marginheight="0" marginwidth="0" name="wxButtonFrame" id="wxButtonFrame" height="150" src="http://btn.weather.ca/weatherbuttons/template7.php?placeCode=CANS0057&category0=Cities&containerWidth=180&btnNo=&backgroundColor=blue&multipleCity=0&citySearch=0&celsiusF=C" align="top" frameborder="0" width="180" scrolling="no" allowTransparency="true">
+            </iframe>
 
-                  <div id='images'>
+            <div id='images'> <!-- This is where the Flicker feed goes --></div>
 
-                  </div>
+            <iframe class="news" src="http://thechronicleherald.mobi/m/news"> </iframe>
 
-            </section>
+          </section>
             
-            <section id="right">
-                <a class="twitter-timeline" href="https://twitter.com/search?q=%23halifax" data-widget-id="319417736629460992">Tweets about "#halifax"</a>
-                    <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");
-                    </script>
+          <section id="right">
+            <a class="twitter-timeline" href="https://twitter.com/search?q=%23halifax" data-widget-id="319417736629460992">Tweets about "#halifax"</a>
+              <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");
+              </script>
+
             </section>
         </div>
         

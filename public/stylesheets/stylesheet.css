@@ -16,10 +16,19 @@ header {
   width: 100%;
   color: #727F95;
   margin-bottom: 20px;
+  margin-top: 20px;
 }
 
 h1 {
   font-size: 3em;
+  margin: 10px 5px 45px 5px;
+  color: color: #727F95;
+}
+
+h2 {
+  font-size: 1em;
+  font-style: normal;
+  color: #727F95;
 }
 
 img {
@@ -37,7 +46,15 @@ img {
 
 .weather {
   padding: 20px;
-  border-bottom: 1px solid #727F95;
+
+}
+
+.news {
+  width: 100%;
+  padding: 20px;
+  height: 800px;
+  margin: 20px 0px 10px 0px;
+  border: 0;
 }
 
 /* page core */
@@ -47,7 +64,7 @@ div#core {
   margin-bottom: 20px;
 }
 section#left {
-  width: 60%;
+  width: 58%;
   float: left;
   margin-right: 5px;
 }
