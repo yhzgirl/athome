@@ -14,21 +14,27 @@
 <body>
       <header>
         <h1>@Home Halifax</h1>
-          <div class='datetime'>
+        <div id="datecontainer">
+          <div id='datetime'>
             <% Time.zone = "Atlantic Time (Canada)" %>
             <% @timehalifax = Time.zone.now %>
-            <h2><%= @timehalifax.strftime("%A, %B %d %Y </br> %H:%M:%S ") %></h2>
-            <h2 class='hidden'>Halifax Time</h3>
-          </div> 
+            <h2><%= @timehalifax.strftime("%A, %B %d %Y %H:%M") %></h2>
+          </div>
+            <div id='halifaxtime'>
+              <h2 >Halifax Time</h2>
+          </div>    
+        </div>
       </header>
         
         <div id="core" class="clearfix">
           <section id="left">
+            <h2 class='mainbody'>Is it Snowing?</h2>
             <iframe class="weather" marginheight="0" marginwidth="0" name="wxButtonFrame" id="wxButtonFrame" height="150" src="http://btn.weather.ca/weatherbuttons/template7.php?placeCode=CANS0057&category0=Cities&containerWidth=180&btnNo=&backgroundColor=blue&multipleCity=0&citySearch=0&celsiusF=C" align="top" frameborder="0" width="180" scrolling="no" allowTransparency="true">
             </iframe>
 
             <div id='images'> <!-- This is where the Flicker feed goes --></div>
 
+            <h2 class="mainbody">Have any pizza places been robbed?</h2>
             <iframe class="news" src="http://thechronicleherald.mobi/m/news"> </iframe>
 
           </section>

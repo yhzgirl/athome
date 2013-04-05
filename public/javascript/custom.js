@@ -14,8 +14,3 @@
       }
     });
   });
-
-$(document).ready(function() {
-  $('.hidden').toggle('mouseenter') function() {
-
-});
