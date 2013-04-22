@@ -8,47 +8,42 @@
     <script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
     <script src="http://code.jquery.com/jquery-migrate-1.1.1.min.js"></script>
     <script type="text/javascript" src="/javascript/custom.js"></script>
-
   </head>
 
-<body>
-      <header>
-        <h1>@Home Halifax</h1>
+  <body>
+    <header>
+      <h1>@Home Halifax</h1>
         <div id="datecontainer">
           <div id='datetime'>
             <% Time.zone = "Atlantic Time (Canada)" %>
             <% @timehalifax = Time.zone.now %>
             <h2><%= @timehalifax.strftime("%A, %B %d %Y %H:%M") %></h2>
           </div>
-            <div id='halifaxtime'>
-              <h2 >Halifax Time</h2>
+          <div id='halifaxtime'>
+            <h2 >Halifax Time</h2>
           </div>    
         </div>
-      </header>
+    </header>
+      
+    <div id="core" class="clearfix">
+      
+      <section id="left">
+        <h2 class='mainbody'>Is it Snowing?</h2>
+          <iframe class="weather" marginheight="0" marginwidth="0" name="wxButtonFrame" id="wxButtonFrame" height="150" src="http://btn.weather.ca/weatherbuttons/template7.php?placeCode=CANS0057&category0=Cities&containerWidth=180&btnNo=&backgroundColor=blue&multipleCity=0&citySearch=0&celsiusF=C" align="top" frameborder="0" width="180" scrolling="no" allowTransparency="true">
+          </iframe>
+        <div id='images'> <!-- This is where the Flicker feed goes --></div>
+          <h2 class="mainbody">Have any pizza places been robbed?</h2>
+          <iframe class="news" src="http://thechronicleherald.mobi/m/news"> </iframe>
+      </section>
         
-        <div id="core" class="clearfix">
-          <section id="left">
-            <h2 class='mainbody'>Is it Snowing?</h2>
-            <iframe class="weather" marginheight="0" marginwidth="0" name="wxButtonFrame" id="wxButtonFrame" height="150" src="http://btn.weather.ca/weatherbuttons/template7.php?placeCode=CANS0057&category0=Cities&containerWidth=180&btnNo=&backgroundColor=blue&multipleCity=0&citySearch=0&celsiusF=C" align="top" frameborder="0" width="180" scrolling="no" allowTransparency="true">
-            </iframe>
-
-            <div id='images'> <!-- This is where the Flicker feed goes --></div>
-
-            <h2 class="mainbody">Have any pizza places been robbed?</h2>
-            <iframe class="news" src="http://thechronicleherald.mobi/m/news"> </iframe>
-
-          </section>
-            
-          <section id="right">
-            <a class="twitter-timeline" href="https://twitter.com/search?q=%23halifax" data-widget-id="319417736629460992">Tweets about "#halifax"</a>
-              <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");
-              </script>
-
-            </section>
-        </div>
-        
-        <footer>
-            <p>Bluenose Girl 2013</p>
-        </footer>
-</body>
+      <section id="right">
+        <a class="twitter-timeline" href="https://twitter.com/search?q=%23halifax" data-widget-id="319417736629460992">Tweets about "#halifax"</a>
+          <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");
+          </script>
+      </section>
+    </div>   
+  <footer>
+      <p>Bluenose Girl 2013</p>
+  </footer>
+  </body>
 </html>
